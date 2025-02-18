@@ -1,0 +1,74 @@
+.slides {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1,
+.div2,
+.div3 {
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgb(254, 254, 254);
+    border: solid black 2px;
+}
+
+.div1 {
+    position: relative;
+    padding: 50px;
+}
+
+.div2 {
+    position: absolute;
+    padding: 50px;
+}
+
+.div3 {
+    z-index: 1;
+    background-color: black;
+    border: solid white 2px;
+    padding: 50px;
+    color: white;
+    width: 400px;
+}
+
+.div2:hover {
+    z-index: 2;
+    background-color: black;
+    border: solid white 2px;
+    color: white;
+    width: 400px;
+}
+
+.div2:hover~.div1 {
+    background-color: white;
+    border: solid black 2px;
+}
+
+.div2:hover~.div3 {
+    background-color: white;
+    border: solid black 2px;
+}
+
+.div1:hover {
+    z-index: 3;
+    background-color: black;
+    border: solid white 2px;
+    color: white;
+    width: 400px;
+}
+
+.div1:hover~.div2 {
+    background-color: white;
+    border: solid black 2px;
+    color: black;
+
+}
+
+.div1:hover~.div3 {
+    background-color: white;
+    border: solid black 2px;
+    color: black;
+}
