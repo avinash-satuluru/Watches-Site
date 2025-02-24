@@ -1,5 +1,7 @@
 import React from 'react'
 import Grid from '../Components/grid'
+import './MenWomen.css'
+
 const women = () => {
     return (
         <div>

@@ -5,7 +5,6 @@ import HeroBanner from '../src/assets/Images/hero-banner-image.jpg'
 
 const home = () => {
 
-
     return (
         <>
             <div className='hero-banner'>
@@ -17,8 +16,7 @@ const home = () => {
                 <Grid limit={4} isTitle={"Recommended For You"} showFilter={false} showTypeF={false} />
             </div>
 
-
-            <div className='category'>
+            <div className='category'  >
                 <div className='Digital watchType'>
                     <h1>Digital</h1>
                 </div>

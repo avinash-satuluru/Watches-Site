@@ -22,8 +22,8 @@ POST http://localhost:5000/watches
 Content-Type: application/json
 
 [
-   { "id": 116, "name": "GM5600MG-9", "type": "Analog", "gender": "Women", "price": 360, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW1.jpg"},
-{ "id": 117, "name": "GA010-11", "type": "Analog", "gender": "Women", "price": 150, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW2.jpg"},
+    { "id": 116, "name": "GM5600MG-9", "type": "Analog", "gender": "Women", "price": 360, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW1.jpg"},
+    { "id": 117, "name": "GA010-11", "type": "Analog", "gender": "Women", "price": 150, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW2.jpg"},
     { "id": 118, "name": "GD00-1A1", "type": "Analog", "gender": "Women", "price": 140, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW3.jpg"},
     { "id": 119, "name": "GA10RL-1A", "type": "Analog", "gender": "Women", "price": 150, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW7.jpg"},
     { "id": 120, "name": "DW600RL-1", "type": "Digital", "gender": "Women", "price": 150, "description": "Luxury watch with Wear OS", "imageUrl": "http://localhost:5000/watches/uploads/gshockW4.jpg"},

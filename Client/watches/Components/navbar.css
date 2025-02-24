@@ -27,3 +27,14 @@
     height: auto;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .Navbar-wrap {
+        width: auto;
+    }
+
+    .Nav-links {
+        font-size: 10px;
+    }
+
+}

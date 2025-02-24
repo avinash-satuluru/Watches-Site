@@ -1,9 +1,10 @@
 import React from 'react'
-import Slides from '../Components/slides'
 const cart = () => {
     return (
         <div>
-            <Slides />
+            <h1>Cart is empty</h1>
+            <h1>Cart is empty</h1>
+            <h1>Cart is empty</h1>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-
 const multer = require('multer')
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -15,6 +14,7 @@ const upload = multer({ storage: storage })
 const watch = require('../models/watchesmodel')
 const mongoose = require('mongoose');
 
+
 //getting all record
 router.get('/', async (req, res) => {
     try {
@@ -25,7 +25,6 @@ router.get('/', async (req, res) => {
         res.status(500).json({ message: error.message })
     }
 })
-
 
 //getting one record
 router.get('/:id', async (req, res) => {
@@ -55,7 +54,6 @@ router.get('/watches/:id', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-
 
 router.get('/name/:name', async (req, res) => {
     try {
@@ -87,12 +85,10 @@ router.get('/gender/:gender', async (req, res) => {
     }
 });
 
-
 // Posting an image
 router.post('/images/uploads', upload.single('file'), (req, res) => {
     res.json(req.file)
 })
-
 
 //posting a record
 router.post('/', async (req, res) => {
@@ -145,6 +141,7 @@ router.delete('/', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
+
 
 
 module.exports = router

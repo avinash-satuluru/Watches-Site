@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./watchDetails.css"
+import AddtoCart from "../Components/addtoCart";
+import Grid from '../Components/grid'
 
 const WatchDetails = () => {
     const { id } = useParams();
@@ -31,9 +33,15 @@ const WatchDetails = () => {
                         <h1 className="watchName">{watch.name}</h1>
                         <p>{watch.description}</p>
                         <p className="watchPrice">${watch.price}</p>
+                        <AddtoCart />
                     </div>
                 </div>
             </div>
+
+            <div>
+                <Grid limit={4} isTitle={"Also Explore"} showFilter={false} showTypeF={false} />
+            </div>
+
         </>
     );
 };

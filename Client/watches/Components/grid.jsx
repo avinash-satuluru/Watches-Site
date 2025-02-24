@@ -54,6 +54,7 @@ const Grid = ({ limit, isTitle, showFilter = true, gender, showTypeF = true }) =
                         </select>
                     </div>
                 )}
+
                 {showTypeF && (
                     <div>
                         <label>Filter by Type: </label>

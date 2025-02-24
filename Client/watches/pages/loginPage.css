@@ -1,3 +1,67 @@
-.loginPage {
+.loginPages {
     padding-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.loginImage img {
+    width: 100%;
+}
+
+.loginForm {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.registerForm {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Feild {
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid black 2px;
+    padding: 10px;
+}
+
+.btn {
+    width: 500px;
+    height: 50px;
+    border: solid black 2px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+.Login,
+.Register {
+    font-size: large;
+    cursor: pointer;
+}
+
+.loginLink:hover,
+.Register:hover {
+    color: rgb(73, 72, 73);
+}
+
+
+.loginLink {
+    color: rgb(0, 4, 255);
+}
+
+@media (max-width: 600px) {
+    .loginPages {
+        display: flex;
+        flex-direction: column;
+    }
 }
